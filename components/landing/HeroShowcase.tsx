@@ -138,7 +138,7 @@ export function HeroShowcase() {
               <pre className="mt-3 overflow-x-auto text-[11.5px] leading-relaxed text-gray-300">
                 <code>
 {`export async function triggerRetentionWorkflow(cohortId: string) {
-  'use server';
+  // Server-side retention action handler
   const session = await auth();
   if (!session) throw new UnauthorizedError();
 
